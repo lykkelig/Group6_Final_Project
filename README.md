@@ -22,3 +22,4 @@ https://www.kaggle.com/datasets/colearninglounge/employee-attrition?select=emplo
 
 5) Machine Learning Model (build a flow chart to think out loud of what you are planning to do. Classification vs regression, how you think it will work)
 
+Communication protocols: Constant slack communication and keep an up to date readme. 
