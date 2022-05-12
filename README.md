@@ -2,18 +2,14 @@
 
 ## Segment 1
 
-The topic we have selected is Emloyee Attrition, looking particularly at the costs assossiated to companies with hiring new employees. 
+The topic we have selected is Employee Attrition, looking particularly at the factors that contribute to employee turnover.
 
-The reason for selecting this topic was to enable companies to evalute their current employee status, and determine whether an employee is at risk for leaving the company. We'd also like to determine the factors contributing towards employees leaving, and.... 
+The reason for selecting this topic was to enable companies to evalute their current employee status, and determine whether an employee is at risk for leaving the company. Given the cost asscociated with hiring a new employee, we'd also like to determine the factors contributing towards employees leaving to help eliminate/minimize these costs. 
 
+2) Dataset - This dataset was gathered from Kaggle and contains HR data of employees that retained and exited the company. The dataset includes muliple variables such as Education, Gender, Salary, and Job Satisfaction. 
 
-
-
-2) Dataset - What are you picking (does not need to be final)
-
-https://www.kaggle.com/datasets/colearninglounge/employee-attrition?select=employee_attrition_test.csv
-
-
+### Link to Dataset
+https://github.com/IBM/employee-attrition-aif360/blob/master/data/emp_attrition.csv
 
 
 ## The outline of this project will follow: 
@@ -45,4 +41,10 @@ https://www.kaggle.com/datasets/colearninglounge/employee-attrition?select=emplo
 ### Finalize Model
 
 
-Communication protocols: Utilize group Slack channel as primary means of communication.
+## Communication protocols: 
+
+Our primary means of communication will be to utilize the group Slack channel, as well as meeting as needed over Zoom.
+
+## Machine Learning Model
+
+
