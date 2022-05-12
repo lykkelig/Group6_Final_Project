@@ -1,6 +1,6 @@
 # Group6_Final_Project
 
-### Segment 1
+## Segment 1
 
 The topic we have selected is Emloyee Attrition, looking particularly at the costs assossiated to companies with hiring new employees. 
 
@@ -16,16 +16,16 @@ https://www.kaggle.com/datasets/colearninglounge/employee-attrition?select=emplo
 
 
 
-The outline of this project will follow: 
+## The outline of this project will follow: 
 
-Import libraries
-Read Data
-Initial Analysis
-    Any missing elements that need to be fixed
-    Fix data issues
-Exploratory Phase
-    Get data statistics 
-    Visualize the data
+### Import libraries
+### Read Data
+### Initial Analysis
+    - Any missing elements that need to be fixed
+    - Fix data issues
+### Exploratory Phase
+    - Get data statistics 
+    - Visualize the data
 Transform Phase
      One hot encoding
      Reduction/Scaling
@@ -45,4 +45,4 @@ Test Models
 Finalize Model
 
 
-Communication protocols: Constant slack communication and keep an up to date readme. 
+Communication protocols: Utilize group Slack channel as primary means of communication.
