@@ -10,6 +10,7 @@ The reason for selecting this topic was to enable companies to evalute their cur
 
 ### Link to Dataset
 https://github.com/IBM/employee-attrition-aif360/blob/master/data/emp_attrition.csv
+
 Dataset - This dataset was gathered from Kaggle and contains HR data of employees that retained and exited the company. The dataset includes muliple variables such as Education, Gender, Salary, and Job Satisfaction. 
 
 ## The outline of this project will follow: 
