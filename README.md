@@ -1,10 +1,12 @@
 # Group6_Final_Project
 
 ### Segment 1
-1) Project Topic (what are you trying to solve)
-- Employee Attrition 
-- See whether a not a person is at risk for leaving the company 
-- What is the problem, why do they want to leave? 
+
+The topic we have selected is Emloyee Attrition, looking particularly at the costs assossiated to companies with hiring new employees. 
+
+The reason for selecting this topic was to enable companies to evalute their current employee status, and determine whether an employee is at risk for leaving the company. We'd also like to determine the factors contributing towards employees leaving, and.... 
+
+
 
 
 2) Dataset - What are you picking (does not need to be final)
@@ -12,14 +14,35 @@
 https://www.kaggle.com/datasets/colearninglounge/employee-attrition?select=employee_attrition_test.csv
 
 
-3) Describe EDA (exploratory data analysis, clean, org, plot)
 
- - Python, Jupyter, Pandas
 
-4) Describe DB (Mongo vs SQL, tables, etc...)
+The outline of this project will follow: 
 
-- TBD. 
+Import libraries
+Read Data
+Initial Analysis
+    Any missing elements that need to be fixed
+    Fix data issues
+Exploratory Phase
+    Get data statistics 
+    Visualize the data
+Transform Phase
+     One hot encoding
+     Reduction/Scaling
+Build Models
+      Logistical Regression
+      Random Forest
+      Support Vector Machine
+      XGBoost
+      Naive Bayes or K-Nearest Neighbor
+Assess classification model accuracy
+       Confusion Matrix
+Hyper parameter tuning
+Apply tuned parameters to models
+Test Models
+   Assess classification model accuracy
+   Choose best performing model
+Finalize Model
 
-5) Machine Learning Model (build a flow chart to think out loud of what you are planning to do. Classification vs regression, how you think it will work)
 
 Communication protocols: Constant slack communication and keep an up to date readme. 
