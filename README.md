@@ -26,23 +26,23 @@ https://www.kaggle.com/datasets/colearninglounge/employee-attrition?select=emplo
 ### Exploratory Phase
     - Get data statistics 
     - Visualize the data
-Transform Phase
-     One hot encoding
-     Reduction/Scaling
-Build Models
-      Logistical Regression
-      Random Forest
-      Support Vector Machine
-      XGBoost
-      Naive Bayes or K-Nearest Neighbor
-Assess classification model accuracy
-       Confusion Matrix
-Hyper parameter tuning
-Apply tuned parameters to models
-Test Models
-   Assess classification model accuracy
-   Choose best performing model
-Finalize Model
+### Transform Phase
+     - One hot encoding
+     - Reduction/Scaling
+### Build Models
+     - Logistical Regression
+     - Random Forest
+     - Support Vector Machine
+     - XGBoost
+     - Naive Bayes or K-Nearest Neighbor
+### Assess classification model accuracy
+     - Confusion Matrix
+### Hyper parameter tuning
+### Apply tuned parameters to models
+### Test Models
+     - Assess classification model accuracy
+     - Choose best performing model
+### Finalize Model
 
 
 Communication protocols: Utilize group Slack channel as primary means of communication.
