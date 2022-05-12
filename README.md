@@ -3,11 +3,12 @@
 ## Segment 1
 ### Overview
 The topic we have selected is Employee Attrition, looking particularly at the factors that contribute to employee turnover.
-
+#### Question
 Can we determine the factors that lead to employee attrition? For those employees identified as being at risk, potential interventions can be considered.
-
+#### Rationale
 The reason for selecting this topic was to enable companies to evalute their current employee status, and determine whether an employee is at risk for leaving the company. Given the cost asscociated with hiring a new employee, we'd also like to determine the factors contributing towards employees leaving to help eliminate/minimize these costs. 
-
+#### Type of Problem
+This is a classification problem
 ### Link to Dataset
 https://github.com/IBM/employee-attrition-aif360/blob/master/data/emp_attrition.csv
 
