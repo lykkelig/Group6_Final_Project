@@ -34,6 +34,8 @@ https://github.com/IBM/employee-attrition-aif360/blob/master/data/emp_attrition.
 ### Assess classification model accuracy
      - Confusion Matrix
 ### Hyper parameter tuning
+    - Grid search
+    - Random search
 ### Apply tuned parameters to models
 ### Test Models
      - Assess classification model accuracy
