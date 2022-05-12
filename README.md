@@ -51,7 +51,7 @@ Our primary means of communication will be to utilize the group Slack channel, a
 We will be using PostgreSQL
 
 #### Data Layout
-The database will contain lookup tables for categorical data. We will define foreign keys for those that we can use to join the lookup tables to the main dataset. The link below 
+The database will contain lookup tables for categorical data. We will define foreign keys for those that we can use to join the lookup tables to the main dataset.  
 
 
 https://github.com/lykkelig/Group6_Final_Project/blob/MeLea_branch/Resources/HR_Attrition_DB.xlsx
