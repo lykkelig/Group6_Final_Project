@@ -13,43 +13,48 @@ https://github.com/IBM/employee-attrition-aif360/blob/master/data/emp_attrition.
 
 Dataset - This dataset was gathered from Kaggle and contains HR data of employees that retained and exited the company. The dataset includes muliple variables such as Education, Gender, Salary, and Job Satisfaction. 
 
-## The outline of this project will follow: 
+### Machine Learning Outline 
 
-### Import libraries
-### Read Data
-### Initial Analysis
-    - Any missing elements that need to be fixed
-    - Fix data issues
-### Exploratory Phase
-    - Get data statistics 
-    - Visualize the data
-### Transform Phase
-     - One hot encoding
-     - Reduction/Scaling
-### Build Models
-     - Logistical Regression
-     - Random Forest
-     - Support Vector Machine
-     - XGBoost
-     - Naive Bayes
-### Assess classification model accuracy
-     - Confusion Matrix
-### Hyper parameter tuning
-    - Grid search
-    - Random search
-### Apply tuned parameters to models
-### Test Models
-     - Assess classification model accuracy
-     - Choose best performing model
-### Finalize Model
+#### Import libraries
+#### Read Data
+#### Initial Analysis
+- Any missing elements that need to be fixed
+- Fix data issues
+#### Exploratory Phase
+- Get data statistics 
+- Visualize the data
+#### Transform Phase
+- One hot encoding
+- Reduction/Scaling
+#### Build Models
+- Logistical Regression
+- Random Forest
+- Support Vector Machine
+- XGBoost
+- Naive Bayes
+#### Assess classification model accuracy
+- Confusion Matrix
+#### Hyper parameter tuning
+- Grid search
+- Random search
+#### Apply tuned parameters to models
+#### Test Models
+- Assess classification model accuracy
+- Choose best performing model
+#### Finalize Model
 
-## Communication protocols 
+### Communication protocols 
 Our primary means of communication will be to utilize the group Slack channel, as well as meeting as needed over Zoom.
 
-## Database
+### Database
 We will be using PostgreSQL
 #### Data Layout
-The database will contain lookup tables for categorical data. We will define foreign keys for those that we can use to join the lookup tables to the main dataset
+The database will contain lookup tables for categorical data. We will define foreign keys for those that we can use to join the lookup tables to the main dataset. The link below 
+
+
+https://github.com/lykkelig/Group6_Final_Project/blob/MeLea_branch/Resources/HR_Attrition_DB.xlsx
+
+
 #### Feature selection
 Through the hyperparameter tuning, we will determine the most relevant features for our model. 
 
