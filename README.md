@@ -1,4 +1,4 @@
-# Group6_Final_Project
+# Group 6 Final Project: Employee Attrition
 
 ## Segment 1
 ### Overview
