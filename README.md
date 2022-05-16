@@ -60,4 +60,7 @@ https://github.com/lykkelig/Group6_Final_Project/blob/MeLea_branch/Resources/HR_
 #### Feature selection
 Through the hyperparameter tuning, we will determine the most relevant features for our model. 
 
+## Segment 2
+### Presentation
+https://docs.google.com/presentation/d/1oIWmk0CwwfXIReTTF_P31aH5Wd4T9M81PJ3DZ_EobMk/edit?usp=sharing
 
