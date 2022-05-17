@@ -1,0 +1,4 @@
+MaritalStatus_FK,MaritalStatus
+6000,Divorced
+6001,Married
+6002,Single
