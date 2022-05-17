@@ -56,6 +56,6 @@ The database will contain lookup tables for categorical data. We will define for
 
 https://github.com/lykkelig/Group6_Final_Project/blob/MeLea_branch/Resources/HR_Attrition_DB.xlsx
 
-
 #### Feature selection
 Through the hyperparameter tuning, we will determine the most relevant features for our model. 
+
