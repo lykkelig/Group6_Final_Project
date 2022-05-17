@@ -1,0 +1,166 @@
+CREATE TABLE public."CD_TRAVEL"
+(
+    "BUSINESSTRAVEL_FK" integer,
+    "BUSINESSTRAVEL" text,
+    PRIMARY KEY ("BUSINESSTRAVEL_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_TRAVEL"
+    OWNER to postgres;-- Table: public.Employee_Status
+
+-- DROP TABLE IF EXISTS public."Employee_Status";
+
+CREATE TABLE IF NOT EXISTS public."Employee_Status"
+(
+    "Age" integer,
+    "Attrition" text COLLATE pg_catalog."default",
+    "BusinessTravel_FK" integer,
+    "DailyRate" integer,
+    "Department_FK" integer,
+    "DistanceFromHome" integer,
+    "Education" integer,
+    "EducationField_FK" integer,
+    "EmployeeCount" integer,
+    "EmployeeNumber" integer NOT NULL,
+    "EnvironmentSatisfaction" integer,
+    "Gender_FK" integer,
+    "HourlyRate" integer,
+    "JobInvolvement" integer,
+    "JobLevel" integer,
+    "JobRole_FK" integer,
+    "JobSatisfaction" integer,
+    "MaritalStatus_FK" integer,
+    "MonthlyIncome" integer,
+    "MonthlyRate" integer,
+    "NumCompaniesWorked" integer,
+    "Over18" "char",
+    "OverTime" text COLLATE pg_catalog."default",
+    "PercentSalaryHike" integer,
+    "PerformanceRating" integer,
+    "RelationshipSatisfaction" integer,
+    "StandardHours" integer,
+    "StockOptionLevel" integer,
+    "TotalWorkingYears" integer,
+    "TrainingTimesLastYear" integer,
+    "WorkLifeBalance" integer,
+    "YearsAtCompany" integer,
+    "YearsInCurrentRole" integer,
+    "YearsSinceLastPromotion" integer,
+    "YearsWithCurrManager" integer,
+    "NumberProjects" integer,
+    "WorkplaceAccident" integer,
+    CONSTRAINT "Employee_Status_pkey" PRIMARY KEY ("EmployeeNumber"),
+    CONSTRAINT "BusinessTravel" FOREIGN KEY ("BusinessTravel_FK")
+        REFERENCES public."CD_TRAVEL" ("BUSINESSTRAVEL_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "Department" FOREIGN KEY ("Department_FK")
+        REFERENCES public."CD_DEPARTMENT" ("DEPARTMENT_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "EducationField" FOREIGN KEY ("EducationField_FK")
+        REFERENCES public."CD_EDUCATIONFIELD" ("EDUCATIONFIELD_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "Gender" FOREIGN KEY ("Gender_FK")
+        REFERENCES public."CD_GENDER" ("GENDER_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "JobRole" FOREIGN KEY ("JobRole_FK")
+        REFERENCES public."CD_ROLE" ("JOBROLE_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "MaritalStatus" FOREIGN KEY ("MaritalStatus_FK")
+        REFERENCES public."CD_M_STATUS" ("MARITALSTATUS_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."Employee_Status"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_TRAVEL"
+    IS 'Code table for Travel text';
+
+-----------------------
+
+CREATE TABLE public."CD_DEPARTMENT"
+(
+    "DEPARTMENT_FK" integer,
+    "DEPARTMENT" text,
+    PRIMARY KEY ("DEPARTMENT_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_DEPARTMENT"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_DEPARTMENT"
+    IS 'Code table for Department text';
+
+------------------
+
+CREATE TABLE public."CD_EDUCATIONFIELD"
+(
+    "EDUCATIONFIELD_FK" integer,
+    "EDUCATIONFIELD" text,
+    PRIMARY KEY ("EDUCATIONFIELD_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_EDUCATIONFIELD"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_EDUCATIONFIELD"
+    IS 'Code table for EducationField text';
+
+--------------
+
+CREATE TABLE public."CD_GENDER"
+(
+    "GENDER_FK" integer,
+    "GENDER" text,
+    PRIMARY KEY ("GENDER_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_GENDER"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_GENDER"
+    IS 'Code table for Gender text';
+
+-----------------
+
+CREATE TABLE public."CD_ROLE"
+(
+    "JOBROLE_FK" integer,
+    "JOBROLE" text,
+    PRIMARY KEY ("JOBROLE_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_ROLE"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_ROLE"
+    IS 'Code table for JobRole text';
+
+-------------------------
+
+CREATE TABLE public."CD_M_STATUS"
+(
+    "MARITALSTATUS_FK" integer,
+    "MARITALSTATUS" text,
+    PRIMARY KEY ("MARITALSTATUS_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_M_STATUS"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_M_STATUS"
+    IS 'Code table for MaritalStatus text';

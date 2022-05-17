@@ -1,3 +1,4 @@
+
 SELECT "Age",
 "Attrition", 
 --"BusinessTravel_FK",
@@ -41,6 +42,7 @@ SELECT "Age",
 "YearsWithCurrManager",
 "NumberProjects",
 "WorkplaceAccident"
+INTO new_table
 FROM "Employee_Status" AS ES
 JOIN "CD_TRAVEL" CDT ON ES."BusinessTravel_FK" = CDT."BUSINESSTRAVEL_FK" 
 JOIN "CD_DEPARTMENT" CDD ON ES."Department_FK" = CDD."DEPARTMENT_FK"
