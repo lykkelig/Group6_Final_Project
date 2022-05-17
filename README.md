@@ -67,3 +67,13 @@ https://docs.google.com/presentation/d/1oIWmk0CwwfXIReTTF_P31aH5Wd4T9M81PJ3DZ_Eo
 ### Storyboard
 https://docs.google.com/presentation/d/1M1fj9CcH7EJvS8uGP9FtiTDbdjSzCFQoaVF_LE2yXgU/edit?usp=sharing
 
+### Machine Learning Model
+#### Description of preliminary data preprocessing
+#### Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
+#### Description of how data was split into training and testing sets
+#### Explanation of model choice, including limitations and benefits
+
+### Dashboard
+Storyboard on a Google Slide(s)
+Description of the tool(s) that will be used to create the final dashboard
+Description of interactive element(s)
