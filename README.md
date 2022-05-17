@@ -64,3 +64,6 @@ Through the hyperparameter tuning, we will determine the most relevant features 
 ### Presentation
 https://docs.google.com/presentation/d/1oIWmk0CwwfXIReTTF_P31aH5Wd4T9M81PJ3DZ_EobMk/edit?usp=sharing
 
+### Storyboard
+https://docs.google.com/presentation/d/1M1fj9CcH7EJvS8uGP9FtiTDbdjSzCFQoaVF_LE2yXgU/edit?usp=sharing
+
