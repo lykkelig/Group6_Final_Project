@@ -1,0 +1,15 @@
+Here are the steps:
+1) Create the database in Postgres (See DDL below)
+2) Create the code tables (DDL in: DDL Scripts for the Code Tables) on our GitHub
+3) Import the CSV's into the individual code tables 
+4) Create the Employee_Status table (DDL in: DDL Script for Table - Employee_Status) on our GitHub
+5) Import the employee attrition CSV data into the Employee_Status table  
+6) Verify everything by running SQL in file: SQL with Joins
+
+
+
+CREATE DATABASE "Group6Final"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
