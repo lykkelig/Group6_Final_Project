@@ -1,15 +1,17 @@
 # Connect to your Postgres DB and read in our data
 # Assume you have psycopg2 installed
+#      Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
 # If not, install using PIP or Conda
 # PIP:
 #       pip install psycopg2
-
+#
 # From Anaconda prompt using Conda:
 #        conda install -c anaconda psycopg2   
 
 import pandas as pd
 import psycopg2
 
+# Replace yourPW with the actual password you used when you installed Postgres 
 connect("host='{}' port={} dbname='{}' user={} password={}".format('127.0.0.1', 5432, 'Group6Final', 'postgres', 'yourPW'))
 
 # Make sure this is entered as ONE line in Jupyter, NOT multiple line
