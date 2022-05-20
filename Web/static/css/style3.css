@@ -1,0 +1,18 @@
+body {
+    color: #f7f7f7;
+  }
+
+.jumbotron {
+    background-image: url("../images/machine_banner5.jpeg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: black;
+    padding-top: 10%;
+
+  }
+
+nav {
+    color: black;
+    text-decoration: none;
+    cursor: auto;
+}
