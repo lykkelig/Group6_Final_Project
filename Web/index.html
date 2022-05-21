@@ -1,89 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>An Analysis on Employee Attrition</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(243, 243, 232);
-}
-
-/* Style the header */
-.header {
-  background-color: rgb(243, 243, 232)d49d;
-  padding: 30px;
-  text-align: left;
-  font-size: 35px;
-  outline: black;
-}
-
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px; 
-  fill: #ccc;/* Should be removed. Only for demonstration */
-}
-
-/* Left and right column */
-.column.side {
-  width: 25%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-.footer {
-  background-color: rgb(243, 243, 232)f1f1;
-  padding: 10px;
-  text-align: center;
-  outline: black;
-  border: black;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Members</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style2.css">
 </head>
-<body>
+<body class="bg-dark">
+    <div class="wrapper">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <li><a href="../index2.html" rel="noopener noreferrer" target="_blank">Home</a></li>
+            <li><a href="https://public.tableau.com/app/profile/erik.svoboda/viz/EmployeeAttrition_16528352408970/FinalProject?publish=yes" rel="noopener noreferrer" target="_blank">Tableau Visualization</a></li>
+            <li><a href="../index3.html" rel="noopener noreferrer" target="_blank">Machine Learning</a></li>
+            <li><a href="https://github.com/lykkelig/Group6_Final_Project" rel="noopener noreferrer" target="_blank">Github</a></li>
+            <li><a href="../index.html" rel="noopener noreferrer" target="_blank">Group Members</a></li>
+            
+            <!--<a href="index.html"><img src="static/images/nasa.jpg" alt="ufo_image_nav" width="45" height="auto"></a>-->
+        </nav>
 
-<h2>Employee Attrition: How can it be mitigated?</h2>
-<p>In this example, we have created a header, three unequal columns and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect.</p>
+        <!-- Page Header -->
+        <div class="jumbotron">
+            <h1 class="display-4">Group Members</h1>
+        </div>
 
-<div class="header">
-  <h2>Header</h2>
-</div>
 
-<div class="row">
-  <div class="column side" style="background-color:#aaa;">What is Employee Attrition?</div>
-  <div class="column middle" style="background-color:#bbb;">The costs of employee turnover</div>
-  <div class="column side" style="background-color:#ccc;">The major factors of attrition</div>
-</div>
+        <body>
+            <div class="nav">
+                <a href="#section1" class="btn">Erik Svoboda</a>
+                <a href="#section2" class="btn">Priya McNamara</a>
+                <a href="#section3" class="btn">MeLea Hetrick</a>
+                <a href="#section4" class="btn">Ron H</a>
+                <a href="#section5" class="btn">Reily Thompson</a>
+            </div>
+            <div class="section one" id="section1">
+                Erik Svoboda
+                <p>Add a photo of each person and can link our Github and LinkedIn</p> 
+            </div>
+            <div class="section two" id="section2">
+                Priya McNamara
+            </div>
+            <div class="section three" id="section3">
+                MeLea Hetrick
+            </div>
+            <div class="section four" id="section4">
+                Ron H
+            </div>
+            <div class="section five" id="section5">
+                Reily Thompson
+            </div>
+        </body>
 
-<div class="footer">
-  <p>Footer</p>
-</div>
 
+
+
+        <!-- Article Title | Article Paragraph -->
+        <!-- <div class="contentBox"> -->
+            <!-- <div class="innerBox">
+                <div class="contentText">
+                    <div class="col-md-2"></div>
+                    <h1>Machine Learning</h1>
+                        <p>
+                        In our analysis we utilized five different modeles:<br><br>
+                        - <a href="Random_forest">Random Forest</a><br>
+                        - Logistic Regression<br>
+                        - Support Vector Machine<br>
+                        - XGBoost<br>
+                        - Naive Bayes<br><br>
+
+                 </div>
+                </div>
+            </div>
+        </div>
+
+                  Article Title | Article Paragraph
+         <div class="contentBox">
+            <div class="innerBox">
+                <div class="contentText">
+                    <div class= "Random Forest" id="Random_forest">
+                        
+                        <p> -->
+
+                 </div>
+                </div>
+            </div>
+        </div>
+                        
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

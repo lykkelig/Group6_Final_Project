@@ -11,6 +11,22 @@ body {
 
 nav {
     color: black;
+    width: 100%;
+    padding: 2%;
+    position: relative;
+    text-align: center;
     text-decoration: none;
     cursor: auto;
+}
+
+.footer {
+  width: 100%;
+  margin: auto;
+  padding-top: 100%;
+  cursor: auto;
+  float: left;
+  color: #ffffff;
+  font-size: larger;
+  text-shadow: #f7f7f7;
+  border: #f7f7f7;
 }

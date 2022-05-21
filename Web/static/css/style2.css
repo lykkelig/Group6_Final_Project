@@ -3,10 +3,10 @@ body {
   }
 
 .jumbotron {
-    background-image: url("../images/banner6.jpeg");
+    background-color: rgb(202, 160, 202);
     background-size: 100%;
     text-align: center;
-    color: rgb(255, 136, 0);
+    color: rgb(0, 0, 0);
     font-weight: 800;
     font-size: xx-large;
     padding-top: 10%;
