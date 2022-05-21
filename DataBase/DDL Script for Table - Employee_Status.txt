@@ -1,0 +1,80 @@
+-- Table: public.Employee_Status
+
+-- DROP TABLE IF EXISTS public."Employee_Status";
+
+CREATE TABLE IF NOT EXISTS public."Employee_Status"
+(
+    "Age" integer NOT NULL,
+    "Attrition" text COLLATE pg_catalog."default" NOT NULL,
+    "BusinessTravel_FK" integer NOT NULL,
+    "DailyRate" integer NOT NULL,
+    "Department_FK" integer NOT NULL,
+    "DistanceFromHome" integer NOT NULL,
+    "Education" integer NOT NULL,
+    "EducationField_FK" integer NOT NULL,
+    "EmployeeCount" integer NOT NULL,
+    "EmployeeNumber" integer NOT NULL,
+    "EnvironmentSatisfaction" integer NOT NULL,
+    "Gender_FK" integer NOT NULL,
+    "HourlyRate" integer NOT NULL,
+    "JobInvolvement" integer NOT NULL,
+    "JobLevel" integer NOT NULL,
+    "JobRole_FK" integer NOT NULL,
+    "JobSatisfaction" integer NOT NULL,
+    "MaritalStatus_FK" integer NOT NULL,
+    "MonthlyIncome" integer NOT NULL,
+    "MonthlyRate" integer NOT NULL,
+    "NumCompaniesWorked" integer NOT NULL,
+    "Over18" "char" NOT NULL,
+    "OverTime" text COLLATE pg_catalog."default" NOT NULL,
+    "PercentSalaryHike" integer NOT NULL,
+    "PerformanceRating" integer NOT NULL,
+    "RelationshipSatisfaction" integer NOT NULL,
+    "StandardHours" integer NOT NULL,
+    "StockOptionLevel" integer NOT NULL,
+    "TotalWorkingYears" integer NOT NULL,
+    "TrainingTimesLastYear" integer NOT NULL,
+    "WorkLifeBalance" integer NOT NULL,
+    "YearsAtCompany" integer NOT NULL,
+    "YearsInCurrentRole" integer NOT NULL,
+    "YearsSinceLastPromotion" integer NOT NULL,
+    "YearsWithCurrManager" intege NOT NULL,
+    "NumberProjects" integer NOT NULL,
+    "WorkplaceAccident" integer NOT NULL,
+    CONSTRAINT "Employee_Status_pkey" PRIMARY KEY ("EmployeeNumber"),
+    CONSTRAINT "BusinessTravel" FOREIGN KEY ("BusinessTravel_FK")
+        REFERENCES public."CD_TRAVEL" ("BUSINESSTRAVEL_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "Department" FOREIGN KEY ("Department_FK")
+        REFERENCES public."CD_DEPARTMENT" ("DEPARTMENT_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "EducationField" FOREIGN KEY ("EducationField_FK")
+        REFERENCES public."CD_EDUCATIONFIELD" ("EDUCATIONFIELD_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "Gender" FOREIGN KEY ("Gender_FK")
+        REFERENCES public."CD_GENDER" ("GENDER_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "JobRole" FOREIGN KEY ("JobRole_FK")
+        REFERENCES public."CD_ROLE" ("JOBROLE_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "MaritalStatus" FOREIGN KEY ("MaritalStatus_FK")
+        REFERENCES public."CD_M_STATUS" ("MARITALSTATUS_FK") MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public."Employee_Status"
+    OWNER to postgres;
