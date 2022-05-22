@@ -25,6 +25,10 @@ body {
   outline: rgb(255, 255, 255);
 }
 
+.navbar li {
+  list-style: none;
+}
+
 .navbar a {
   padding-left: 2%;
   color: #f7f7f7;

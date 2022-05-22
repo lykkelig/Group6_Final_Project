@@ -28,6 +28,10 @@ body {
   font-weight: 800;
 }
 
+.navbar li {
+  list-style: none;
+}
+
 .footer-column1 {
   padding-top: 5%;
 }
