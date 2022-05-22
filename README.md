@@ -28,35 +28,36 @@ Dataset - This dataset was gathered from Kaggle and contains HR data of employee
 
 5) Machine Learning Model (build a flow chart to think out loud of what you are planning to do. Classification vs regression, how you think it will work)
 
-Communication protocols: Constant slack communication and keep an up to date readme. 
 
-Import libraries
+### Import libraries
 
-Read Data
+### Read Data
 
-Initial Analysis
+### Initial Analysis
 
 - Any missing elements that need to be fixed
 - Fix data issues
-Exploratory Phase
+### Exploratory Phase
 - Get data statistics
 - Visualize the data
-Transform Phase
+### Transform Phase
 - One hot encoding
 - Reduction/Scaling
-Build Models
+### Build Models
 - Logistical Regression
 - Random Forest
 - Support Vector Machine
 - XGBoost
 - Naive Bayes
-Assess classification model accuracy
+### Assess classification model accuracy
 - Confusion Matrix
-Hyper parameter tuning
+### Hyper parameter tuning
 - Grid search
 - Random search
-Apply tuned parameters to models
-Test Models
+### Apply tuned parameters to models
+### Test Models
 - Assess classification model accuracy
 - Choose best performing model
-Finalize Model
+### Finalize Model
+
+Communication protocols: Constant slack communication and keep an up to date readme. 
