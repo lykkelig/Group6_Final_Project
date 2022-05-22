@@ -9,24 +9,38 @@ body {
     color: black;
   }
 
-nav {
-    color: black;
-    width: 100%;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    cursor: auto;
+.navbar {
+  cursor:  auto;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  padding-left: 28%;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: black;
+  width: 100%;
+  outline: rgb(255, 255, 255);
 }
 
-.footer {
+.navbar a {
+  padding-left: 2%;
+  color: #f7f7f7;
+  font-weight: 800;
+}
+
+.footer-column1 {
   width: 100%;
   margin: auto;
-  padding-top: 100%;
+  padding-top: 5%;
   cursor: auto;
-  float: left;
+  float: right;
   color: #ffffff;
   font-size: larger;
   text-shadow: #f7f7f7;
   border: #f7f7f7;
+}
+
+.container-fluid {
+  padding-top: 2%;
+  padding-left: 0.5%;
 }
