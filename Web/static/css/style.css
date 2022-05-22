@@ -29,11 +29,17 @@ body {
 }
 
 .footer-column1 {
-  width: 100%;
-  margin: auto;
   padding-top: 5%;
+}
+
+.footer-column1 p {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.footer-column1 a {
   cursor: auto;
-  float: right;
+  float: left;
   color: #ffffff;
   font-size: larger;
   text-shadow: #f7f7f7;
