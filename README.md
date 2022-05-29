@@ -367,6 +367,6 @@ hr_df_copy = hr_df
     - The HTML will utilize interactive buttons to navigate different pages and open links to new pages
 
 ### Visualization
-Using HTML we will utilize interactive buttons to navigate different pages, open links to new pages. We will use Tableau to visualize the data with different charts. 
+Using HTML we will utilize interactive buttons to navigate different pages and open links to new pages. We will use Tableau to visualize the data with different charts. 
 
 Link to updated HTML https://github.com/lykkelig/Group6_Final_Project/tree/Erik_Branch/Web
