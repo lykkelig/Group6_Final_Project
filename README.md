@@ -77,17 +77,21 @@ https://github.com/lykkelig/Group6_Final_Project/blob/main/DataBase/Group6-ERD-E
 
 ### Machine Learning Model
 #### Description of preliminary data preprocessing, preliminary feature engineering and preliminary feature selection, including the decision-making process (rationale)
-**Preliminary data preprocessing**
+Preliminary data preprocessing:
 - Check shape 
     - 1470 rows, 37 columns
 - Count nulls
     - 0 nulls
-**Preliminary feature selection:**
+
+
+Preliminary feature selection:
 - Count unique values in each column & drop columns with just 1 unique value. *Rationale: all employees have the same value, will not be beneficial to analysis*
     - 3 columns dropped: 'EmployeeCount','Over18','StandardHours'
 - Drop columns that are not applicable to analysis. *Rationale: this feature is just an identifier and does not add value to the analysis.*
     - 1 column dropped: 'Employee ID'
-**Preliminary Feature Engineering**
+
+
+Preliminary Feature Engineering:
 - Explore data types
     - int64: 25 columns
     - object: 8 columns
@@ -115,9 +119,7 @@ hr_df = hr_df.merge(hr_encode, left_index=True, right_index=True)
 hr_df = hr_df.drop(hr_cat, 1)
 
 ```
-
-#### Description of how data was split into training and testing sets
-**Split data using train test split**
+**Data was split into training and testing sets using train test split**
 ```
 # split data into feature/target
 y = hr_df['Attrition_Yes'].values
@@ -134,11 +136,16 @@ print("y_train {}".format(y_train.shape))
 print("y_test {}".format(y_test.shape))
 
 ```
-**Shape of resultant groups:**
+**Shape of resultant datasets:**
+
 X_train (1102, 53)
+
 X_test (368, 53)
+
 y_train (1102,)
+
 y_test (368,)
+
 
 
 **Scale data**
@@ -158,79 +165,136 @@ X_test_scaled = X_scaler.transform(X_test)
 ```
 
 #### Explanation of model choice, including limitations and benefits
-**Model accuracy**
-Logistic Regression
-- Accuracy Score: 87.228%
+We looked at model accuracy to evaluate and compare the models. Accuracy scores for each model are shown below.
 
-Random Forest Classifier
-- Accuracy Score: 87.772%
+- Logistic Regression
+    - Accuracy Score: 87.228%
 
-Support Vector Machine
-- Accuracy Score: 87.228%
+- Random Forest Classifier
+    - Accuracy Score: 87.772%
 
-XG Boost
-- Accuracy Score: 88.315%
+- Support Vector Machine
+    - Accuracy Score: 87.228%
 
-Naïve Bayes
-- Accuracy Score: 71.467%
+- XG Boost
+    - Accuracy Score: 88.315%
 
-From the first round, prior to hyperparameter tuning, Naive bayes had the lowest accuracy score, while the other four had scores within about 1% of one another. With hyperparameter tuning, we will select the model with the highest accuracy for our final model.
+- Naïve Bayes
+    - Accuracy Score: 71.467%
+
+From the first round, prior to hyperparameter tuning, Naive bayes had the lowest accuracy score, while the other four had scores within about 1% of one another. After hyperparameter tuning, we will select the model with the highest accuracy for our final model.
 
 **Feature Selection**
+
+
 Feature importances were also explored. Feature importances are shown below.
+
 MonthlyIncome: (0.07150306388968197)
+
 YearsAtCompany: (0.05807616966840398)
+
 Age: (0.05330981509566146)
+
 TotalWorkingYears: (0.050245021973411)
+
 DailyRate: (0.04537980848227202)
+
 MonthlyRate: (0.04498047205481945)
+
 HourlyRate: (0.043802301414367494)
+
 DistanceFromHome: (0.03529855546318947)
+
 YearsWithCurrManager: (0.035122841444005494)
+
 OverTime_No: (0.034847748816645346)
+
 JobLevel: (0.03284102402886094)
+
 PercentSalaryHike: (0.03107222389656012)
+
 NumCompaniesWorked: (0.030696997069795815)
+
 YearsInCurrentRole: (0.028732339684965504)
+
 StockOptionLevel: (0.026851662368389616)
+
 OverTime_Yes: (0.02557564131660932)
+
 EnvironmentSatisfaction: (0.025286571725883385)
+
 TrainingTimesLastYear: (0.023146406567618683)
+
 JobSatisfaction: (0.021115409662644642)
+
 YearsSinceLastPromotion: (0.020978506026656418)
+
 WorkLifeBalance: (0.020934200731404465)
+
 RelationshipSatisfaction: (0.02054707427633941)
+
 NumberProjects: (0.019546501039550194)
+
 JobInvolvement: (0.01937764514616901)
+
 Education: (0.017195164662508127)
+
 MARITALSTATUS_Single: (0.01654875832160354)
+
 DEPARTMENT_Research & Development: (0.00971448913608631)
+
 BUSINESSTRAVEL_Travel_Frequently: (0.009100127897459646)
+
 DEPARTMENT_Sales: (0.008971077343631652)
+
 EDUCATIONFIELD_Life Sciences: (0.008967076606018521)
+
 JOBROLE_Laboratory Technician: (0.008816836204110605)
+
 MARITALSTATUS_Married: (0.008306320305722724)
+
 GENDER_Female: (0.008139064043715442)
+
 EDUCATIONFIELD_Technical Degree: (0.007936484718039188)
+
 GENDER_Male: (0.007003669397755229)
+
 JOBROLE_Manufacturing Director: (0.00620196645433555)
+
 EDUCATIONFIELD_Medical: (0.005799131373343575)
+
 BUSINESSTRAVEL_Travel_Rarely: (0.0057806201018827975)
+
 JOBROLE_Research Scientist: (0.0056002809456128025)
+
 MARITALSTATUS_Divorced: (0.005456843388724418)
+
 JOBROLE_Sales Representative: (0.0052514958958241355)
+
 EDUCATIONFIELD_Marketing: (0.005220790793298497)
+
 JOBROLE_Sales Executive: (0.0051582408509034)
+
 BUSINESSTRAVEL_Non-Travel: (0.004910530118812076)
+
 PerformanceRating: (0.004511609290055028)
+
 WorkplaceAccident: (0.0038089513850478283)
+
 JOBROLE_Healthcare Representative: (0.0033392508246691648)
+
 EDUCATIONFIELD_Other: (0.0027170220949647517)
+
 JOBROLE_Manager: (0.0022441859353904176)
+
 JOBROLE_Research Director: (0.0014301035256888506)
+
 JOBROLE_Human Resources: (0.001387590012002482)
+
 DEPARTMENT_Human Resources: (0.0008450699093607982)
+
 EDUCATIONFIELD_Human Resources: (0.0003692466195273013)
+
 
 
 
@@ -300,7 +364,7 @@ hr_df_copy = hr_df
 - Description of the tool(s) that will be used to create the final dashboard:
     - HTML file with tableau visualizations deployed on GitHub
 - Description of interactive element(s)
-    - Tableau will contain the interactive elements
+    - The HTML will utilize interactive buttons to navigate different pages and open links to new pages
 
 ### Visualization
 Using HTML we will utilize interactive buttons to navigate different pages, open links to new pages. We will use Tableau to visualize the data with different charts. 
