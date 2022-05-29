@@ -59,3 +59,6 @@ https://github.com/lykkelig/Group6_Final_Project/blob/MeLea_branch/Resources/HR_
 #### Feature selection
 Through the hyperparameter tuning, we will determine the most relevant features for our model. 
 
+#### Visualiation
+
+Using HTML we utilize interactive buttons to navigate different pages, open links to new pages, and we are using Tabluea to visualize the data with different charts. Link to updated HTML https://github.com/lykkelig/Group6_Final_Project/tree/Erik_Branch/Web
