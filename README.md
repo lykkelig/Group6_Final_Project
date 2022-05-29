@@ -154,57 +154,148 @@ X_test_scaled = X_scaler.transform(X_test)
 **Model accuracy**
 Logistic Regression
 - Accuracy Score: 87.228%
-- Classification Report:
-```    
-                  pre       rec       spe        f1       geo       iba       sup
 
-        0.0       0.87      1.00      0.00      0.93      0.00      0.00       321
-        1.0       0.00      0.00      1.00      0.00      0.00      0.00        47
-
-avg / total       0.76      0.87      0.13      0.81      0.00      0.00       368
-
-```
 Random Forest Classifier
 - Accuracy Score: 87.772%
-- Classification Report:
-```
-
-```
-
 
 Support Vector Machine
 - Accuracy Score: 87.228%
-- Classification Report:
-```
-
-
-```
-
-
-
 
 XG Boost
 - Accuracy Score: 88.315%
-- Classification Report:
-```
-
-
-```
-
-
-
 
 Naïve Bayes
 - Accuracy Score: 71.467%
-- Classification Report:
+
+From the first round, prior to hyperparameter tuning, Naive bayes had the lowest accuracy score, while the other four had scores within about 1% of one another. With hyperparameter tuning, we will select the model with the highest accuracy for our final model.
+
+**Feature Selection**
+Feature importances were also explored. Feature importances are shown below.
+MonthlyIncome: (0.07150306388968197)
+YearsAtCompany: (0.05807616966840398)
+Age: (0.05330981509566146)
+TotalWorkingYears: (0.050245021973411)
+DailyRate: (0.04537980848227202)
+MonthlyRate: (0.04498047205481945)
+HourlyRate: (0.043802301414367494)
+DistanceFromHome: (0.03529855546318947)
+YearsWithCurrManager: (0.035122841444005494)
+OverTime_No: (0.034847748816645346)
+JobLevel: (0.03284102402886094)
+PercentSalaryHike: (0.03107222389656012)
+NumCompaniesWorked: (0.030696997069795815)
+YearsInCurrentRole: (0.028732339684965504)
+StockOptionLevel: (0.026851662368389616)
+OverTime_Yes: (0.02557564131660932)
+EnvironmentSatisfaction: (0.025286571725883385)
+TrainingTimesLastYear: (0.023146406567618683)
+JobSatisfaction: (0.021115409662644642)
+YearsSinceLastPromotion: (0.020978506026656418)
+WorkLifeBalance: (0.020934200731404465)
+RelationshipSatisfaction: (0.02054707427633941)
+NumberProjects: (0.019546501039550194)
+JobInvolvement: (0.01937764514616901)
+Education: (0.017195164662508127)
+MARITALSTATUS_Single: (0.01654875832160354)
+DEPARTMENT_Research & Development: (0.00971448913608631)
+BUSINESSTRAVEL_Travel_Frequently: (0.009100127897459646)
+DEPARTMENT_Sales: (0.008971077343631652)
+EDUCATIONFIELD_Life Sciences: (0.008967076606018521)
+JOBROLE_Laboratory Technician: (0.008816836204110605)
+MARITALSTATUS_Married: (0.008306320305722724)
+GENDER_Female: (0.008139064043715442)
+EDUCATIONFIELD_Technical Degree: (0.007936484718039188)
+GENDER_Male: (0.007003669397755229)
+JOBROLE_Manufacturing Director: (0.00620196645433555)
+EDUCATIONFIELD_Medical: (0.005799131373343575)
+BUSINESSTRAVEL_Travel_Rarely: (0.0057806201018827975)
+JOBROLE_Research Scientist: (0.0056002809456128025)
+MARITALSTATUS_Divorced: (0.005456843388724418)
+JOBROLE_Sales Representative: (0.0052514958958241355)
+EDUCATIONFIELD_Marketing: (0.005220790793298497)
+JOBROLE_Sales Executive: (0.0051582408509034)
+BUSINESSTRAVEL_Non-Travel: (0.004910530118812076)
+PerformanceRating: (0.004511609290055028)
+WorkplaceAccident: (0.0038089513850478283)
+JOBROLE_Healthcare Representative: (0.0033392508246691648)
+EDUCATIONFIELD_Other: (0.0027170220949647517)
+JOBROLE_Manager: (0.0022441859353904176)
+JOBROLE_Research Director: (0.0014301035256888506)
+JOBROLE_Human Resources: (0.001387590012002482)
+DEPARTMENT_Human Resources: (0.0008450699093607982)
+EDUCATIONFIELD_Human Resources: (0.0003692466195273013)
+
+
+
+### Database
+Using our python code (shown below), we connect with postgreSQL to join our primary table with six additional tables. The ERD can be found at this link: https://github.com/lykkelig/Group6_Final_Project/blob/main/DataBase/Group6-ERD-Employee_Status.pdf
 ```
+#Connect to database
+conn = psycopg2.connect("host='{}' port={} dbname='{}' user={} password={}".format('127.0.0.1', 5432, 'Group6Final', 'postgres', postpw)
+
+#Perform joins
+SQL = """SELECT "Age",
+"Attrition",
+"BUSINESSTRAVEL",
+"DailyRate",
+"Department",
+"DistanceFromHome",
+"Education",
+"EDUCATIONFIELD",
+"EmployeeCount",
+"EmployeeNumber",
+"EnvironmentSatisfaction",
+"GENDER",
+"HourlyRate",
+"JobInvolvement",
+"JobLevel",
+"JOBROLE",
+"JobSatisfaction",
+"MARITALSTATUS",
+"MonthlyIncome",
+"MonthlyRate",
+"NumCompaniesWorked",
+"Over18",
+"OverTime",
+"PercentSalaryHike",
+"PerformanceRating",
+"RelationshipSatisfaction",
+"StandardHours",
+"StockOptionLevel",
+"TotalWorkingYears",
+"TrainingTimesLastYear",
+"WorkLifeBalance",
+"YearsAtCompany",
+"YearsInCurrentRole",
+"YearsSinceLastPromotion",
+"YearsWithCurrManager",
+"NumberProjects",
+"WorkplaceAccident"
+FROM "Employee_Status" AS ES
+JOIN "CD_TRAVEL" CDT ON ES."BusinessTravel_FK" = CDT."BUSINESSTRAVEL_FK"
+JOIN "CD_DEPARTMENT" CDD ON ES."Department_FK" = CDD."DEPARTMENT_FK"
+JOIN "CD_EDUCATIONFIELD" CDE ON ES."EducationField_FK" = CDE."EDUCATIONFIELD_FK"
+JOIN "CD_GENDER" CDG ON ES."Gender_FK" = CDG."GENDER_FK"
+JOIN "CD_ROLE" CDR ON ES."JobRole_FK" = CDR."JOBROLE_FK"
+JOIN "CD_M_STATUS" CDS ON ES."MaritalStatus_FK" = CDS."MARITALSTATUS_FK"""
+
+# Add double quotes to end
+SQL = SQL + '"'
 
 
+# Read the file into a dataframe
+hr_df = pd.read_sql_query(SQL, conn)
+hr_df_copy = hr_df 
 ```
-
 
 ### Dashboard
+- Storyboard
 - Description of the tool(s) that will be used to create the final dashboard:
     - HTML file with tableau visualizations deployed on GitHub
 - Description of interactive element(s)
     - Tableau will contain the interactive elements
+
+### Visualization
+Using HTML we will utilize interactive buttons to navigate different pages, open links to new pages. We will use Tableau to visualize the data with different charts. 
+
+Link to updated HTML https://github.com/lykkelig/Group6_Final_Project/tree/Erik_Branch/Web
