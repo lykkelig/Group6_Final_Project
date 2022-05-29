@@ -53,33 +53,41 @@ We will be using PostgreSQL
 #### Data Layout
 The database will contain lookup tables for categorical data. We will define foreign keys for those that we can use to join the lookup tables to the main dataset.  
 
-
-
-
 #### Feature selection
 Through the hyperparameter tuning, we will determine the most relevant features for our model. 
 
 ## Segment 2
 ### Resources
-#### Code
+
+#### Code: Python
 The code for the data preprocessing, exploratory analysis, and machine learning models is in the following notebook:
 
 https://github.com/lykkelig/Group6_Final_Project/blob/main/Python_Code/Employee_Attrition_Model.ipynb
-### Presentation
 
-### Storyboard
+#### Code: HTML
+Link to updated HTML: 
 
+https://github.com/lykkelig/Group6_Final_Project/tree/Erik_Branch/Web
+
+
+#### ERD
+The ERD can be found at this link: 
+
+https://github.com/lykkelig/Group6_Final_Project/blob/main/DataBase/Group6-ERD-Employee_Status.pdf
 
 ### Machine Learning Model
-#### Description of preliminary data preprocessing
+#### Description of preliminary data preprocessing, preliminary feature engineering and preliminary feature selection, including the decision-making process (rationale)
+**Preliminary data preprocessing**
 - Check shape 
     - 1470 rows, 37 columns
 - Count nulls
     - 0 nulls
-- Count unique values in each column & drop columns with just 1 unique value
+**Preliminary feature selection:**
+- Count unique values in each column & drop columns with just 1 unique value. *Rationale: all employees have the same value, will not be beneficial to analysis*
     - 3 columns dropped: 'EmployeeCount','Over18','StandardHours'
-- Drop columns that are not applicable to analysis
+- Drop columns that are not applicable to analysis. *Rationale: this feature is just an identifier and does not add value to the analysis.*
     - 1 column dropped: 'Employee ID'
+**Preliminary Feature Engineering**
 - Explore data types
     - int64: 25 columns
     - object: 8 columns
@@ -108,7 +116,6 @@ hr_df = hr_df.drop(hr_cat, 1)
 
 ```
 
-#### Description of preliminary feature engineering and preliminary feature selection, including the decision-making process
 #### Description of how data was split into training and testing sets
 **Split data using train test split**
 ```
