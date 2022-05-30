@@ -67,7 +67,7 @@ https://github.com/lykkelig/Group6_Final_Project/blob/main/Python_Code/Employee_
 #### Code: HTML
 Link to updated HTML: 
 
-https://github.com/lykkelig/Group6_Final_Project/tree/Erik_Branch/Web
+https://github.com/lykkelig/Group6_Final_Project/tree/Priya_branch/Web
 
 
 #### ERD
