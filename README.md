@@ -184,38 +184,36 @@ We looked at model accuracy to evaluate and compare the models. Initial accuracy
 
 The accuracy scores after hyperparameter tuning are shown below.
 - Logistic Regression
-    - Accuracy Score: 90.816%
+    - Accuracy Score: 89.796%
 
 - Random Forest Classifier
-    - Accuracy Score: 87.075%
+    - Accuracy Score: 86.735%
 
 - Support Vector Machine
-    - Accuracy Score: 85.714%
+    - Accuracy Score: 89.116%
 
 - XG Boost
     - Accuracy Score: 87.755%
 
 - Naïve Bayes
-    - Accuracy Score: 70.408%
+    - Accuracy Score: 62.585%
 
-Based on the accuracy scores, the Logistic Regression model was selected, with an accuracy score of 90.8%
+There are many options that can be tried with hyperparameter tuning. We experimented with a number of options but none improved the model accuracy. The final model, which gives the most accurate results is linear regression with an accuracy of 89.8%.
 
 **Feature Selection**
 
 Feature importances were also explored. The top ten features for the logistic regression model are shown below
-
-1. OverTime_Yes
-2. PerformanceRating
-3. BusinessTravel_Travel_Frequently
-4. JobRole_Laboratory Technician
-5. MaritalStatus_Single
+    
+1. YearsAtCompany
+2. YearsSinceLastPromotion
+3. NumCompaniesWorked
+4. OverTime_Yes
+5. DistanceFromHome
 6. EducationField_Technical Degree
-7. JobRole_Sales Representative
-8. Gender_Male
-9. Department_Sales
-10. EducationField_Marketing
-
-
+7. BusinessTravel_Travel_Frequently
+8. JobRole_Laboratory Technician
+9. MaritalStatus_Single
+10. EducationField_Technical Degree
 
 
 
