@@ -1,0 +1,56 @@
+body {
+    color: #f7f7f7;
+  }
+
+.jumbotron {
+    background-image: url("../images/banner.jpeg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: black;
+  }
+
+.navbar {
+  cursor:  auto;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  padding-left: 28%;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: black;
+  width: 100%;
+  outline: rgb(255, 255, 255);
+}
+
+.navbar a {
+  padding-left: 2%;
+  color: #f7f7f7;
+  font-weight: 800;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.footer-column1 {
+  padding-top: 5%;
+}
+
+.footer-column1 p {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.footer-column1 a {
+  cursor: auto;
+  float: left;
+  color: #ffffff;
+  font-size: larger;
+  text-shadow: #f7f7f7;
+  border: #f7f7f7;
+}
+
+.container-fluid {
+  padding-top: 2%;
+  padding-left: 0.5%;
+}
