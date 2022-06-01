@@ -1,5 +1,0 @@
-CREATE DATABASE "Group6Final"
-    WITH 
-    OWNER = postgres
-    ENCODING = 'UTF8'
-    CONNECTION LIMIT = -1;
