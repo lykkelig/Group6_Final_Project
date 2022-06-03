@@ -29,6 +29,13 @@ The ERD can be found at this link:
 
 https://github.com/lykkelig/Group6_Final_Project/blob/main/DataBase/Group6-ERD-Employee_Status.pdf
 
+#### Tableau Visualizations
+https://public.tableau.com/app/profile/erik.svoboda/viz/EmployeeAttrition_16528352408970/FinalProject?publish=yes
+
+
+https://public.tableau.com/app/profile/reilly.thompson/viz/Group6_Final_Tab/Story1
+
+
 ### Machine Learning Model
 #### Description of preliminary data preprocessing, preliminary feature engineering and preliminary feature selection, including the decision-making process (rationale)
 Preliminary data preprocessing:
