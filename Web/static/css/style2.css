@@ -1,0 +1,107 @@
+body {
+    color: #f7f7f7;
+  }
+
+.jumbotron {
+    background-color: rgb(202, 160, 202);
+    background-size: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: xx-large;
+    padding-top: 10%;
+  }
+
+.navbar {
+  cursor:  auto;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  padding-left: 28%;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: black;
+  width: 100%;
+  outline: rgb(255, 255, 255);
+ }
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  padding-left: 2%;
+  color: #f7f7f7;
+  font-weight: 800;
+}
+
+.contentBox {
+  margin-top: 10px;
+  width: 470px;
+  height: auto;
+  background-color: #160306;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentBox .innerBox {
+  margin-left: 10px;
+  position: relative;
+  width: 450px;
+  height: auto;
+  top: 10px;
+  background-image: url(contentBack.png);
+  background-color: #FFFFFF;
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentText {
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 13px;
+  margin-right: 13px;
+  color:black
+}
+
+.btn {
+  color: white;
+  background-color: purple;
+  height: 50px;
+  width: 190px;
+  padding: 2px;
+  border: 2px solid black;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+}
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(202, 160, 202);
+  font-size: x-large;
+  color: white;
+  text-align: center;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  place-items: center;
+}
+
+.section {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(96, 96, 230);
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 10px 5px;
+}
