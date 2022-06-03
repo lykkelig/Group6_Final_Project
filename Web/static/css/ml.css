@@ -6,12 +6,12 @@ body {
     background-image: url("../images/banner6.jpeg");
     background-size: 100%;
     text-align: center;
-    color: rgb(255, 136, 0);
+    color: rgb(1, 1, 1);
     font-weight: 900;
     font-size: xx-large;
     padding-top: 10%;
     outline-style: solid;
-    outline-color: rgb(133, 194, 235);
+    outline-color: rgb(255, 255, 255);
   }
 
 .navbar {
@@ -102,9 +102,9 @@ body {
 
 .section {
   width: 100vw;
-  height: 200vh;
-  background-color: rgb(96, 96, 230);
-  font-size: 40px;
+  height: 160vh;
+  background-color: rgba(171, 224, 122, 0.239);
+  font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   text-align: center;
@@ -113,4 +113,14 @@ body {
 
 .section1 h2 {
   outline-style: solid;
+}
+
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.0em;
+  margin-bottom: 0.73em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }
