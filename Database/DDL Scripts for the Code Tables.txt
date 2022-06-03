@@ -1,0 +1,87 @@
+CREATE TABLE public."CD_TRAVEL"
+(
+    "BUSINESSTRAVEL_FK" integer NOT NULL,
+    "BUSINESSTRAVEL" text NOT NULL,
+    PRIMARY KEY ("BUSINESSTRAVEL_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_TRAVEL"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_TRAVEL"
+    IS 'Code table for Travel text';
+
+-----------------------
+
+CREATE TABLE public."CD_DEPARTMENT"
+(
+    "DEPARTMENT_FK" integer NOT NULL,
+    "DEPARTMENT" text NOT NULL,
+    PRIMARY KEY ("DEPARTMENT_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_DEPARTMENT"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_DEPARTMENT"
+    IS 'Code table for Department text';
+
+------------------
+
+CREATE TABLE public."CD_EDUCATIONFIELD"
+(
+    "EDUCATIONFIELD_FK" integer NOT NULL,
+    "EDUCATIONFIELD" text NOT NULL,
+    PRIMARY KEY ("EDUCATIONFIELD_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_EDUCATIONFIELD"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_EDUCATIONFIELD"
+    IS 'Code table for EducationField text';
+
+--------------
+
+CREATE TABLE public."CD_GENDER"
+(
+    "GENDER_FK" integer NOT NULL,
+    "GENDER" text NOT NULL,
+    PRIMARY KEY ("GENDER_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_GENDER"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_GENDER"
+    IS 'Code table for Gender text';
+
+-----------------
+
+CREATE TABLE public."CD_ROLE"
+(
+    "JOBROLE_FK" integer NOT NULL,
+    "JOBROLE" text NOT NULL,
+    PRIMARY KEY ("JOBROLE_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_ROLE"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_ROLE"
+    IS 'Code table for JobRole text';
+
+-------------------------
+
+CREATE TABLE public."CD_M_STATUS"
+(
+    "MARITALSTATUS_FK" integer NOT NULL,
+    "MARITALSTATUS" text NOT NULL,
+    PRIMARY KEY ("MARITALSTATUS_FK")
+);
+
+ALTER TABLE IF EXISTS public."CD_M_STATUS"
+    OWNER to postgres;
+
+COMMENT ON TABLE public."CD_M_STATUS"
+    IS 'Code table for MaritalStatus text';
