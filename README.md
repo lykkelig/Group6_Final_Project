@@ -164,13 +164,13 @@ print("y_test {}".format(y_test.shape))
 ```
 **Shape of resultant datasets:**
 
-X_train (1102, 53)
+X_train (1176, 53)
 
-X_test (368, 53)
+X_test (294, 53)
 
-y_train (1102,)
+y_train (1176,)
 
-y_test (368,)
+y_test (294,)
 
 
 
