@@ -124,3 +124,8 @@ h2 {
   margin-right: 0;
   font-weight: bold;
 }
+
+img {
+  height: auto;
+  width: 47%;
+}
