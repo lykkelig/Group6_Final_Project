@@ -9,17 +9,19 @@ The reason for selecting this topic was to enable companies to evalute their cur
 This is a classification problem
 
 ### Resources
-#### Link to Dataset
+#### Dataset
+Link to Dataset:
 https://github.com/IBM/employee-attrition-aif360/blob/master/data/emp_attrition.csv
 
 Dataset - This dataset was gathered from Kaggle and contains HR data of employees that were retained by or exited the company. The dataset includes multiple variables such as Education, Gender, Salary, and Job Satisfaction. 
+
 #### Code: Python
 The code for the data preprocessing, exploratory analysis, and machine learning models is in the following notebook:
 
 https://github.com/lykkelig/Group6_Final_Project/blob/main/Python_Code/Employee_Attrition_Model.ipynb
 
-#### Code: HTML
-Link to updated HTML 
+#### Dashboard
+Link to dashboard:
 
 https://github.com/lykkelig/Group6_Final_Project/tree/Priya_branch/Web
 
@@ -33,6 +35,8 @@ https://github.com/lykkelig/Group6_Final_Project/blob/main/DataBase/Group6-ERD-E
 https://public.tableau.com/app/profile/erik.svoboda/viz/EmployeeAttrition_16528352408970/FinalProject?publish=yes
 
 https://public.tableau.com/app/profile/reilly.thompson/viz/Group6_Final_Tab/Story1
+
+
 
 ## Outline
 ### Database
