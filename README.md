@@ -11,6 +11,7 @@ This is a classification problem
 ### Resources
 #### Dataset
 Link to Dataset:
+
 https://github.com/IBM/employee-attrition-aif360/blob/master/data/emp_attrition.csv
 
 Dataset - This dataset was gathered from Kaggle and contains HR data of employees that were retained by or exited the company. The dataset includes multiple variables such as Education, Gender, Salary, and Job Satisfaction. 
