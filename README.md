@@ -169,8 +169,8 @@ Feature importances were also explored. The top ten features for the logistic re
 3. NumCompaniesWorked
 4. OverTime_Yes
 5. DistanceFromHome
-6. EducationField_Technical Degree
-7. BusinessTravel_Travel_Frequently
+6. BusinessTravel_Travel_Frequently
+7. JobRole_Human Resources
 8. JobRole_Laboratory Technician
 9. MaritalStatus_Single
 10. EducationField_Technical Degree
