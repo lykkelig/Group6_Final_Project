@@ -242,9 +242,16 @@ Feature importances were also explored. The top five features for the logistic r
 5. YearsWithCurrManager
 
 **Summary of Selected Model**
+
 The best performing model is the logistic regression model. The logistic regression model has an accuracy of 89.8%, indicating that this model correctly predicted attrition almost 90% of the time. The confusion matrix shows this model categorized 247 correctly as high risk, and 17 correctly as low risk. This model incorrectly categorized 25 incorrectly as high risk, and 5 incorrectly as low risk. 
 
 
+### Visualization
+Tableau was used to visualize the data with different charts. 
+
+https://public.tableau.com/app/profile/erik.svoboda/viz/EmployeeAttrition_16528352408970/FinalProject?publish=yes
+
+https://public.tableau.com/app/profile/reilly.thompson/viz/Group6_Final_Tab/Story1
 
 ### Dashboard
 - Description of the tool(s) that will be used to create the final dashboard:
@@ -252,6 +259,4 @@ The best performing model is the logistic regression model. The logistic regress
 - Description of interactive element(s)
     - The HTML utilizes interactive buttons to navigate different pages and open links to new pages
 
-### Visualization
-Using HTML we utilizes interactive buttons to navigate different pages and open links to new pages. Tableau was used to visualize the data with different charts. 
 
