@@ -255,9 +255,9 @@ https://public.tableau.com/app/profile/erik.svoboda/viz/EmployeeAttrition_165283
 https://public.tableau.com/app/profile/reilly.thompson/viz/Group6_Final_Tab/Story1
 
 ### Dashboard
-- Description of the tool(s) that will be used to create the final dashboard:
+- Tools that will be used to create the final dashboard:
     - HTML file with tableau visualizations deployed on GitHub
-- Description of interactive element(s)
+- Interactive elements:
     - The HTML utilizes interactive buttons to navigate different pages and open links to new pages
 
 
