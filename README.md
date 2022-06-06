@@ -43,7 +43,7 @@ https://public.tableau.com/app/profile/reilly.thompson/viz/Group6_Final_Tab/Stor
 ### Database
 Using our python code (shown below), we connect with postgreSQL to join our primary table with six additional tables. The ERD can be found at this link:
 
-[https://github.com/lykkelig/Group6_Final_Project/blob/main/DataBase/Group6-ERD-Employee_Status.pdf](https://github.com/lykkelig/Group6_Final_Project/blob/main/Database/Group6-ERD-Employee_Status.pdf)
+https://github.com/lykkelig/Group6_Final_Project/blob/main/Database/Group6-ERD-Employee_Status.pdf
 ```
 #Connect to database
 conn = psycopg2.connect("host='{}' port={} dbname='{}' user={} password={}".format('127.0.0.1', 5432, 'Group6Final', 'postgres', postpw)
