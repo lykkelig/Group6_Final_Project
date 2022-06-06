@@ -30,7 +30,7 @@ https://github.com/lykkelig/Group6_Final_Project/tree/main/Web
 #### ERD
 The ERD can be found at this link: 
 
-https://github.com/lykkelig/Group6_Final_Project/blob/main/DataBase/Group6-ERD-Employee_Status.pdf
+https://github.com/lykkelig/Group6_Final_Project/blob/main/Database/Group6-ERD-Employee_Status.pdf
 
 #### Tableau Visualizations
 https://public.tableau.com/app/profile/erik.svoboda/viz/EmployeeAttrition_16528352408970/FinalProject?publish=yes
