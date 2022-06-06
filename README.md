@@ -24,7 +24,7 @@ https://github.com/lykkelig/Group6_Final_Project/blob/main/Python_Code/Employee_
 #### Dashboard
 Link to dashboard:
 
-https://github.com/lykkelig/Group6_Final_Project/tree/Priya_branch/Web
+https://github.com/lykkelig/Group6_Final_Project/tree/main/Web
 
 
 #### ERD
