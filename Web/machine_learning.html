@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/ml.css">
+</head>
+<body class="bg-dark">
+    <div class="wrapper">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <li><a href="../home.html" rel="noopener noreferrer" target="_blank">Home</a></li>
+            <a href="https://public.tableau.com/app/profile/erik.svoboda/viz/EmployeeAttrition_16528352408970/FinalProject?publish=yes" rel="noopener noreferrer" target="_blank">Tableau Visualization</a>
+            <li><a href="../machine_learning.html" rel="noopener noreferrer" target="_blank">Machine Learning</a></li>
+            <a href="https://github.com/lykkelig/Group6_Final_Project" rel="noopener noreferrer" target="_blank">Github</a>
+            <li><a href="../group.html" rel="noopener noreferrer" target="_blank">Group Members</a></li>
+            
+            
+        </nav>
+
+        <!-- Page Header -->
+        <div class="jumbotron">
+            <h1 class="display-4">Machine Learning:<br> Which model performed the best?</h1>
+        </div>
+
+
+        <body>
+            <div class="nav">
+                <a href="#section1" class="btn">Logistical Regression</a>
+                <a href="#section2" class="btn">Random Forest</a>
+                <a href="#section3" class="btn">Support Vector Machine</a>
+                <a href="#section4" class="btn">XGBoost</a>
+                <a href="#section5" class="btn">Naive Bayes</a>
+                <a href="#section6" class="btn">Hyperparameter Tuning</a>
+            </div>
+            <div class="section one" id="section1"><br>
+                <h2 style="text-align:center" >Logistical Regression</h2>
+                <p style="text-align:left">The accuracy score for the Logistic Regression model was 89.8%, as shown below. The model predicted 247 true positives, five false positives, 25 false negatives, and 17 true negatives. The high risk precision is 91%, with a sensitivity percentage of 98%, and an F1 score of 94%. The low risk precision is showing 77%, with a sensitivity percentage of 40%, and an F1 score of 53%.</p>
+                <img src="static/machine_learning_images/log_reg/log_reg_updated.png" alt="Train" width="730" height="700" style="float: left; margin-bottom: 15px; margin-top: 15px;">
+                <img src="static/machine_learning_images/log_reg/log_feature_importance.png" alt="Train" width="660" height="850" style="float: right; margin-bottom: 15px; margin-right: 15px;">
+                <img src="static/machine_learning_images/log_reg/log_imbalance_scores.png" alt="Train"  width="730" height="220" style="float: left; margin-bottom: 15px; margin-left: 15px;">
+            </div>
+            <div class="section two" id="section2"><br>
+                <h2 style="text-align:center">Random Forest</h2>
+                <p style="text-align:left">The accuracy score for the Random Forest Classifier model was 86.7%, as shown below. The model predicted 251 true positives, 1 false positive, 30 false negatives, and 4 true negatives. The high risk precision is 87%, with a sensitivity percentage of 100%, and an F1 score of 93%. The low risk precision is showing 80%, with a sensitivity percentage of 10%, and an F1 score of 17%.</p>
+                <img src="static/machine_learning_images/Random_Forest/RF_cm.png" alt="Confusion Matrix" width="685" height="500" style="float: center; margin-bottom: 15px; margin-top: 15px;">
+                <img src="static/machine_learning_images/Random_Forest/RF_imbalance_scores.png" alt="Confusion Matrix" width="685" height="350" style="float: center; margin-bottom: 15px; margin-top: 15px;">
+                <img src="static/machine_learning_images/Random_Forest/RF_top_features.png" alt="Confusion Matrix" width="685" height="250" style="float: center; margin-bottom: 15px; margin-top: 15px;">
+            </div>
+            <div class="section three" id="section3"><br>
+                <h2>Support Vector Machine</h2>
+                <p style="text-align:left">The accuracy score for the Support Vector Machine model was 89.1%, as shown below. The model predicted 248 true positives, 4 false positives, 28 false negatives, and 14 true negatives. The high risk precision is 90%, with a sensitivity percentage of 98%, and an F1 score of 94%. The low risk precision is showing 78%, with a sensitivity percentage of 33%, and an F1 score of 47%.</p>
+                <img src="static/machine_learning_images/Support_Vector_ML/SVM_accuracy_CM.png" alt="Confusion Matrix" width="550" height="400" style="float: left; margin-bottom: 15px; margin-top: 15px; margin-left: 15px;">
+                <img src="static/machine_learning_images/Support_Vector_ML/SVM_top_features.png" alt="Confusion Matrix" width= "850" height="700" style="float: right; margin-bottom: 15px; margin-top: 15px; margin-right: 15px;">
+                <img src="static/machine_learning_images/Support_Vector_ML/SVM_imbalanced_scores.png" alt="Confusion Matrix" width="550" height="250" style="float: left; margin-bottom: 15px; margin-top: 15px; margin-left: 15px;">
+            </div>
+            <div class="section four" id="section4"><br>
+                <h2>XGBoost</h2>
+                <p style="text-align:left">The accuracy score for the XGBoost model was 87.7%, as shown below. The model predicted 247 true positives, 5 false positives, 31 false negatives, and 11 true negatives.</p>
+                <img src="static/machine_learning_images/XGBoost/XGB_accuracy_CM.png" alt="Confusion Matrix" style="float: center; margin-bottom: 15px; margin-top: 15px;">
+            </div>
+            <div class="section five" id="section5"><br>
+                <h2>Naive Bayes</h2>
+                <p style="text-align:left">The accuracy score for the Naive Bayes model was 62.5%, as shown below. The model predicted 156 true positives, 96 false positives, 14 false negatives, and 28 true negatives.</p>
+                <img src="static/machine_learning_images/Naive_Bayes/NB_accuracy_CM.png" alt="Confusion Matrix" style="float: center; margin-bottom: 15px; margin-top: 15px;">
+            </div>
+            <div class="section six" id="section6"><br>
+                <h2>Hyperparameter Tuning</h2>
+                <p style="text-align:left">We used hyperparameter tuning on all five models. Below we can see the accuracy score of all the models. The Logistic Regression model performed the best out of all models.</p>
+                <img src="static/machine_learning_images/HP_Tuning/HP_results.png" alt="HP Tuning" width="1100" height="300" style="float: center; margin-bottom: 15px; margin-top: 15px;"><br>
+                <img src="static/machine_learning_images/HP_Tuning/LR_HP_tuning.png" alt="LR Tuning" width="1100" height="250" style="float: center; margin-bottom: 15px; margin-top: 15px;">
+            </div>
+        </body>
+                 </div>
+                </div>
+            </div>
+        </div>
+                        
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
